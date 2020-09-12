@@ -1,0 +1,20 @@
+import random
+print("Welcome to Number Guessing Game!!!!")
+print()
+a=input("Please Enter Your Name:")
+print()
+print("Hello",a,",")
+e='y'
+while e=='y':
+   b=int(input("Enter the maximum no between which you will guess:"))
+   c=random.randint(0,b)
+   d=int(input("Enter Your Guess:"))
+   print()
+   if b==c:
+    print("Congratulations",a,"","You have successfully completed the game :-)")
+   else:
+    print("The Number was,",c)
+    print("You Lost",a,"!!!","Try Again")
+   e=input("Do you want to continue [y/n]:")
+else:
+    print("Thank you",a,"for playing the game")
